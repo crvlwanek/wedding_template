@@ -9,7 +9,7 @@ const LandingSection = (props) => {
           <img className="avatar" />
         </Container>
         <Container className="title-box">
-          <h1>
+          <h1 className="avatar-name-text">
             {props.groom_name} & {props.bride_name}
           </h1>
           <Link
@@ -18,9 +18,9 @@ const LandingSection = (props) => {
             rel="noopener"
             underline="none"
           >
-            <h2>{props.location}</h2>
+            <h2 className="avatar-detail-text">{props.location}</h2>
           </Link>
-          <h2>
+          <h2 className="avatar-detail-text">
             {props.date} | {props.time}
           </h2>
         </Container>
