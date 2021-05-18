@@ -1,0 +1,25 @@
+{
+  "groom_name": "Devan",
+  "bride_name": "Gina",
+  "date": "January 1, 2020",
+  "time": "2:00pm",
+  "location": "1713 Emmet Street, Two Rivers, WI",
+  "schedule": [
+    {
+      "time": "12:00pm",
+      "event": "People arrive"
+    },
+    {
+      "time": "1:00pm",
+      "event": "Ceremony"
+    },
+    {
+      "time": "2:00pm",
+      "event": "Photos"
+    },
+    {
+      "time": "6:00pm",
+      "event": "Reception"
+    }
+  ]
+}
