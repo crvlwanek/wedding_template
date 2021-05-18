@@ -1,13 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Sacramento&display=swap");
 
+:root {
+  --background: #dddddd;
+  --background2: #aaaaaa;
+  --secondary-text: #666666;
+}
+
 html {
-  width: auto;
+  width: 100%;
 }
 
 body {
-  background-color: #dddddd;
+  background-color: var(--background);
   margin: 0;
-  width: auto;
+  width: 100%;
 }
 
 h1 {
@@ -27,7 +33,7 @@ h2 {
 }
 
 h4 {
-  color: #666666;
+  color: var(--secondary-text);
   font-family: "Montserrat", sans-serif;
 }
 
@@ -104,8 +110,9 @@ h4 {
   width: 220px;
 }
 
-.photo-box {
+div.photo-box {
   height: 400px;
+  margin-bottom: 50px;
 }
 
 .photo1 {
@@ -135,4 +142,28 @@ h4 {
   position: relative;
   z-index: 1;
   margin-bottom: -75px;
+}
+
+.icon-bar {
+  padding-bottom: 20px;
+}
+
+svg.icon {
+  color: var(--secondary-text);
+}
+
+footer {
+  background-color: var(--background2);
+  padding: 20px;
+}
+
+.footer-container {
+  text-align: center;
+  padding: 30px;
+}
+
+.footer-text {
+  color: var(--secondary-text);
+  padding: 3px;
+  text-decoration: none;
 }

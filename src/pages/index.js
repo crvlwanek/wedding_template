@@ -2,6 +2,7 @@ import * as React from "react";
 import Layout from "./components/Layout";
 import LandingSection from "./components/LandingSection";
 import ScheduleSection from "./components/ScheduleSection";
+import Footer from "./components/Footer";
 
 const data = require("../data.json");
 
@@ -16,6 +17,7 @@ const IndexPage = () => {
         location={data.location}
       />
       <ScheduleSection schedule={data.schedule} />
+      <Footer />
     </Layout>
   );
 };
