@@ -6,7 +6,7 @@ const IconBarItem = (props) => {
   const Icon = props.icon;
   return (
     <IconButton href={props.link} target="_blank" rel="noopener noreferrer">
-      <Icon className="icon" />
+      {Icon ? <Icon className="icon" /> : null}
     </IconButton>
   );
 };

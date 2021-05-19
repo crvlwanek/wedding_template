@@ -4,7 +4,7 @@ import LandingSection from "./components/LandingSection";
 import ScheduleSection from "./components/ScheduleSection";
 import Footer from "./components/Footer";
 
-const data = require("../data.json");
+import data from "../data.json";
 
 const IndexPage = () => {
   return (

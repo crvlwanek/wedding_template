@@ -1,8 +1,10 @@
 import * as React from "react";
 import { Box, Button, Container, Grid, Link } from "@material-ui/core";
 
-const LandingSection = (props) => {
-  return (
+import data from "../../data.json";
+
+const LandingSection = () => {
+  return data ? (
     <Box className="hero header">
       <Box className="center">
         <Container className="avatar-box">
@@ -10,18 +12,18 @@ const LandingSection = (props) => {
         </Container>
         <Container className="title-box">
           <h1 className="avatar-name-text">
-            {props.groom_name} & {props.bride_name}
+            {data.groom_name} & {data.bride_name}
           </h1>
           <Link
-            href={"https://www.google.com/maps/place/" + props.location}
+            href={"https://www.google.com/maps/place/" + data.location}
             target="_blank"
             rel="noopener"
             underline="none"
           >
-            <h2 className="avatar-detail-text">{props.location}</h2>
+            <h2 className="avatar-detail-text">{data.location}</h2>
           </Link>
           <h2 className="avatar-detail-text">
-            {props.date} | {props.time}
+            {data.date} | {data.time}
           </h2>
         </Container>
         <Grid
@@ -42,7 +44,7 @@ const LandingSection = (props) => {
         </Grid>
       </Box>
     </Box>
-  );
+  ) : null;
 };
 
 export default LandingSection;

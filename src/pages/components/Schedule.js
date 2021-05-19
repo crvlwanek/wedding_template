@@ -7,11 +7,13 @@ const Schedule = (props) => {
       <Typography variant="h2" color="secondary">
         Schedule
       </Typography>
-      {props.schedule.map((item) => (
-        <h4 className="schedule-body-text">
-          {item.time} - {item.event}
-        </h4>
-      ))}
+      {props.schedule
+        ? props.schedule.map((item) => (
+            <h4 className="schedule-body-text">
+              {item.time} - {item.event}
+            </h4>
+          ))
+        : null}
     </Paper>
   );
 };

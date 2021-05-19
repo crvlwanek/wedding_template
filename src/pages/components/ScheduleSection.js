@@ -5,7 +5,7 @@ import Photos from "./Photos";
 import Schedule from "./Schedule";
 
 const ScheduleSection = (props) => {
-  return (
+  return props ? (
     <section id="schedule">
       <Grid
         container
@@ -21,7 +21,7 @@ const ScheduleSection = (props) => {
         <Photos />
       </Grid>
     </section>
-  );
+  ) : null;
 };
 
 export default ScheduleSection;
