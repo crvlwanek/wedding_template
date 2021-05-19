@@ -1,0 +1,2 @@
+(self.webpackChunkwedding_template=self.webpackChunkwedding_template||[]).push([[718],{4174:function(e,n,t){"use strict";t.r(n),t.d(n,{default:function(){return r}});var u=t(7294);function r(e){var n=e.children;return u.createElement("div",null,n)}}}]);
+//# sourceMappingURL=component---src-pages-components-layout-js-f0703f8819b0d0a512dc.js.map
