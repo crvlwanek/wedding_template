@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Box, Button, Container, Grid, Link } from "@material-ui/core";
 
-import data from "../../data.json";
+import data from "../data.json";
 
 const LandingSection = () => {
   return data ? (

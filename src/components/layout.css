@@ -8,15 +8,22 @@
   --secondary-bg: #aaaaaa;
   --secondary-text: #666666;
 
-  --avatar-size: 15rem;
+  --avatar-size: 14rem;
   --photo-size: 200px;
   --photo-border: 10px;
   --photo-box: calc(var(--photo-size) + var(--photo-border) * 2);
 }
 
+html {
+  height: 100%;
+  width: auto;
+  margin: 0;
+}
+
 body {
   background-color: var(--theme1);
   margin: 0;
+  max-width: inherit;
   width: auto;
 }
 
@@ -109,6 +116,14 @@ body {
   width: 100%;
 }
 
+@media screen and (max-width: 500px) {
+  .paper {
+    margin-left: 0;
+    margin-right: 0;
+    max-width: none;
+  }
+}
+
 .schedule-body-text {
   color: var(--secondary-text);
   font-family: "Montserrat", sans-serif;
@@ -119,8 +134,8 @@ body {
 /* ------------ <Photos.js> ------------ */
 
 div.photo-box {
-  height: 400px;
-  margin-bottom: 50px;
+  height: 300px;
+  margin-bottom: 70px;
 }
 
 .box {
@@ -158,6 +173,17 @@ div.photo-box {
   background-image: url(../images/proposal.jpg);
   left: 102px;
   transform: rotate(13deg);
+}
+
+@media screen and (max-width: 500px) {
+  .photo1,
+  .photo3 {
+    display: none;
+  }
+  div.photo-box {
+    height: 220px;
+    margin-bottom: 65px;
+  }
 }
 
 /* ------------ </Photos.js> ------------ */

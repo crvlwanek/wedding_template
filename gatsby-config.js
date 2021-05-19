@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/wedding_template",
   siteMetadata: {
     title: "Wedding Template",
   },

@@ -3,7 +3,7 @@ import * as React from "react";
 import { Typography, Container, Link } from "@material-ui/core";
 
 import IconBar from "./IconBar";
-import getCurrentPath from "../../utils/getCurrentPath";
+import getCurrentPath from "../utils/getCurrentPath";
 
 const Footer = () => {
   const path = getCurrentPath();
