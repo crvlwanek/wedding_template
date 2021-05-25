@@ -8,7 +8,7 @@
   --secondary-bg: #aaaaaa;
   --secondary-text: #666666;
 
-  --avatar-size: 14rem;
+  --avatar-size: 15rem;
   --photo-size: 200px;
   --photo-border: 10px;
   --photo-box: calc(var(--photo-size) + var(--photo-border) * 2);
@@ -35,7 +35,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  height: 600px;
+  height: 100vh;
   justify-content: center;
   position: relative;
   text-shadow: 3px 3px 5px black;
@@ -92,7 +92,7 @@ body {
 .avatar-detail-text {
   color: white;
   font-family: "Montserrat", sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   line-height: 1.5;
   margin: 0;
 }
@@ -120,7 +120,7 @@ body {
   .paper {
     margin-left: 0;
     margin-right: 0;
-    max-width: none;
+    max-width: 100%;
   }
 }
 
@@ -175,14 +175,10 @@ div.photo-box {
   transform: rotate(13deg);
 }
 
-@media screen and (max-width: 500px) {
-  .photo1,
-  .photo3 {
-    display: none;
-  }
+@media (max-width: 500px) {
   div.photo-box {
-    height: 220px;
-    margin-bottom: 65px;
+    display: none;
+    position: fixed;
   }
 }
 
