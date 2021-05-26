@@ -4,7 +4,11 @@ import LandingSection from "../components/LandingSection";
 import ScheduleSection from "../components/ScheduleSection";
 import Footer from "../components/Footer";
 
+import setViewHeight from "../utils/setViewHeight";
+
 import data from "../data.json";
+
+setViewHeight();
 
 const IndexPage = () => {
   return (
