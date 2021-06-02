@@ -1,10 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Sacramento&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Sacramento&family=Roboto&display=swap");
 
 :root {
   --theme1: #dddddd;
   --theme2: #f9f3f3;
   --theme3: #f7d9d9;
   --theme4: #f25287;
+  --theme5: #f50057;
   --secondary-bg: #aaaaaa;
   --secondary-text: #666666;
 
@@ -12,6 +13,8 @@
   --photo-size: 200px;
   --photo-border: 10px;
   --photo-box: calc(var(--photo-size) + var(--photo-border) * 2);
+
+  --button__font: "Roboto", sans-serif;
 }
 
 html {
@@ -96,6 +99,15 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 1.2rem;
   line-height: 1.5;
+  margin: 0;
+}
+
+.avatar-date-text {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  line-height: 1.5;
+  font-weight: 700;
   margin: 0;
 }
 
@@ -185,8 +197,6 @@ div.photo-box {
 }
 
 /* ------------ </Photos.js> ------------ */
-
-/* ------------ <Footer.js> ------------ */
 
 footer {
   background-color: var(--secondary-bg);

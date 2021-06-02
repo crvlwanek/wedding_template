@@ -4,9 +4,10 @@ import LandingSection from "../components/LandingSection";
 import ScheduleSection from "../components/ScheduleSection";
 import Footer from "../components/Footer";
 
-import setViewHeight from "../utils/setViewHeight";
+import { setViewHeight } from "../utils/setViewHeight";
 
 import data from "../data.json";
+import TravelSection from "../components/TravelSection";
 
 setViewHeight();
 
@@ -21,6 +22,7 @@ const IndexPage = () => {
         location={data.location}
       />
       <ScheduleSection schedule={data.schedule} />
+      <TravelSection />
       <Footer />
     </Layout>
   );

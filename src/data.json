@@ -1,9 +1,11 @@
 {
   "groom_name": "Devan",
   "bride_name": "Gina",
-  "date": "January 1, 2020",
-  "time": "2:00pm",
-  "location": "1713 Emmet Street, Two Rivers, WI",
+  "date": "December 4, 2021",
+  "time": "",
+  "location": "Lighthouse Inn On Lake Michigan",
+  "location_link": "https://www.lhinn.com/",
+  "address": "1515 Memorial Dr, Two Rivers, WI",
   "schedule": [
     {
       "time": "12:00pm",
@@ -20,6 +22,26 @@
     {
       "time": "6:00pm",
       "event": "Reception"
+    }
+  ],
+  "travel": [
+    {
+      "heading": "Hamilton Wood Type Museum",
+      "description": "The Hamilton Wood Type and Printing Museum is the only museum dedicated to the preservation, study, production and printing of wood type. With 1.5 million pieces of wood type and more than 1,000 styles and sizes of patterns, Hamilton’s collection is one of the premier wood type collections in the world.",
+      "image": "https://derwombatdotnet.files.wordpress.com/2013/07/hwt_museuminterior.png",
+      "link": "https://woodtype.org/"
+    },
+    {
+      "heading": "Hamilton Wood Type Museum",
+      "description": "",
+      "image": "https://derwombatdotnet.files.wordpress.com/2013/07/hwt_museuminterior.png",
+      "link": "https://woodtype.org/"
+    },
+    {
+      "heading": "Hamilton Wood Type Museum",
+      "description": "",
+      "image": "https://derwombatdotnet.files.wordpress.com/2013/07/hwt_museuminterior.png",
+      "link": "https://woodtype.org/"
     }
   ]
 }

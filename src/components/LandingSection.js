@@ -1,10 +1,12 @@
 import * as React from "react";
-import { Box, Button, Container, Grid, Link } from "@material-ui/core";
+import { Box, Container, Grid, Link } from "@material-ui/core";
+
+import { Button } from "./Button";
 
 import data from "../data.json";
 
 const LandingSection = () => {
-  return data ? (
+  return (
     <Box className="hero header">
       <Box className="center">
         <Container className="avatar-box">
@@ -14,17 +16,23 @@ const LandingSection = () => {
           <h1 className="avatar-name-text">
             {data.groom_name} & {data.bride_name}
           </h1>
+          <h2 className="avatar-date-text">{data.date}</h2>
           <Link
-            href={"https://www.google.com/maps/place/" + data.location}
+            href={data.location_link}
             target="_blank"
             rel="noopener"
             underline="none"
           >
             <h2 className="avatar-detail-text">{data.location}</h2>
           </Link>
-          <h2 className="avatar-detail-text">
-            {data.date} | {data.time}
-          </h2>
+          <Link
+            href={"https://www.google.com/maps/place/" + data.address}
+            target="_blank"
+            rel="noopener"
+            underline="none"
+          >
+            <h2 className="avatar-detail-text">{data.address}</h2>
+          </Link>
         </Container>
         <Grid
           container
@@ -34,17 +42,17 @@ const LandingSection = () => {
           spacing={3}
         >
           <Grid item>
-            <Button variant="contained">Hotel</Button>
+            <Button href="#travel">Travel Info</Button>
           </Grid>
           <Grid item>
-            <Button href="#schedule" variant="contained" color="secondary">
+            <Button href="#schedule" textColor="white" color="var(--theme5)">
               Schedule
             </Button>
           </Grid>
         </Grid>
       </Box>
     </Box>
-  ) : null;
+  );
 };
 
 export default LandingSection;
