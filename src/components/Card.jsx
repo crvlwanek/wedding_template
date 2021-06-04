@@ -33,6 +33,8 @@ const textStyles = {
   margin: "10px 0",
   fontFamily: '"Roboto", sans-serif',
   color: "#666666",
+  lineHeight: "1.7",
+  fontSize: "0.9rem",
 };
 
 const buttonStyles = {

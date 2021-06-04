@@ -10,10 +10,11 @@ const Footer = () => {
   return (
     <footer>
       <Container className="footer-container">
-        <IconBar />
-        <Typography className="footer-text" variant="body1">
-          Chris VL-Wanek © {new Date().getFullYear()}
-        </Typography>
+        <Link href={path + "#"} underline="none">
+          <Typography className="footer-text" variant="body1">
+            Back to top
+          </Typography>
+        </Link>
         <Link
           href="https://github.com/crvlwanek/wedding-template"
           underline="none"
@@ -22,11 +23,10 @@ const Footer = () => {
             View the GitHub Repo
           </Typography>
         </Link>
-        <Link href={path + "#"} underline="none">
-          <Typography className="footer-text" variant="body1">
-            Back to top
-          </Typography>
-        </Link>
+        <Typography className="footer-text" variant="body1">
+          Chris VL-Wanek © {new Date().getFullYear()}
+        </Typography>
+        <IconBar />
       </Container>
     </footer>
   );
