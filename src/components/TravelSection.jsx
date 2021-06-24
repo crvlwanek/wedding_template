@@ -13,7 +13,7 @@ const styles = {
     boxShadow:
       "0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%)",
     fontSize: "3.75rem",
-    margin: "10px auto",
+    margin: "0 auto 20px",
     width: "fit-content",
     borderRadius: "10px",
     background: "white",
@@ -33,10 +33,7 @@ const styles = {
 
 const TravelSection = () => {
   return (
-    <section
-      id="travel"
-      style={{ background: "var(--theme1)", padding: "20px 0" }}
-    >
+    <section id="travel" style={{ background: "var(--theme1)" }}>
       <h1 style={styles.header}>Local Attractions</h1>
       <div style={styles.cardHolder}>
         {data?.travel?.map((item) => (
